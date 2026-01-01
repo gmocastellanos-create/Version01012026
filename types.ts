@@ -5,7 +5,9 @@ export enum Section {
   FACEBOOK = 'FACEBOOK',
   INSTAGRAM_TIKTOK = 'INSTAGRAM_TIKTOK',
   LINKEDIN = 'LINKEDIN',
-  TRIGGERS = 'TRIGGERS'
+  TRIGGERS = 'TRIGGERS',
+  NICHOS_OSCUROS = 'NICHOS_OSCUROS',
+  IA_DESIGN = 'IA_DESIGN'
 }
 
 export interface StrategyCard {

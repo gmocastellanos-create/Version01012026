@@ -27,9 +27,9 @@ const DashboardLayout: React.FC = () => {
 
     // Placeholder for Triggers or others
     return (
-      <div className="p-12 rounded-3xl shadow-neu-flat text-center">
-        <h2 className="text-2xl text-white font-bold mb-4">Módulo en Desarrollo</h2>
-        <p className="text-white opacity-50">Acceso exclusivo comunidad. Contacto 3115893220.</p>
+      <div className="p-12 rounded-3xl shadow-neu-flat text-center border border-[#ffffff05] bg-[#ffffff02] animate-in slide-in-from-bottom-4">
+        <h2 className="text-3xl text-[#7da6ff] font-black mb-4 uppercase tracking-tighter">Módulo en Desarrollo</h2>
+        <p className="text-white opacity-60 text-lg">Acceso exclusivo comunidad Elite. Contacto: 311 589 3220.</p>
       </div>
     );
   };
@@ -38,22 +38,24 @@ const DashboardLayout: React.FC = () => {
     <div className="min-h-screen bg-[#1e2127] flex flex-col lg:flex-row">
       <Sidebar currentSection={currentSection} onSelectSection={setCurrentSection} />
       
-      <main className="flex-1 lg:ml-72 p-6 lg:p-12">
+      <main className="flex-1 lg:ml-72 p-6 lg:p-12 overflow-x-hidden">
         <div className="max-w-7xl mx-auto pt-20 lg:pt-0">
-          <div className="flex items-center justify-between mb-12 border-b border-[#ffffff05] pb-6">
+          <div className="flex items-center justify-between mb-12 border-b border-[#ffffff10] pb-8">
             <div>
-              <p className="text-[10px] text-[#4169e1] font-bold tracking-[0.2em] mb-1 uppercase">PLATAFORMA ESTRATÉGICA</p>
-              <h3 className="text-white text-xl font-medium">Panel de Inteligencia Orgánica</h3>
+              <p className="text-[11px] text-[#7da6ff] font-black tracking-[0.4em] mb-2 uppercase">INTELIGENCIA ESTRATÉGICA</p>
+              <h3 className="text-white text-2xl font-bold tracking-tight">Panel de Control <span className="text-[#7da6ff] opacity-40">| Orgánico V2.2</span></h3>
             </div>
             <button 
               onClick={() => setIsClosed(true)}
-              className="px-6 py-2 rounded-xl shadow-neu-flat text-white hover:text-[#ff4444] hover:shadow-neu-pressed transition-all duration-300 text-sm font-bold flex items-center gap-2"
+              className="px-8 py-3 rounded-2xl shadow-neu-flat text-white hover:text-[#ff4444] hover:shadow-neu-pressed transition-all duration-300 text-xs font-black tracking-widest flex items-center gap-3 border border-[#ffffff05] uppercase"
             >
               <span>🚪</span> SALIR
             </button>
           </div>
           
-          {renderContent()}
+          <div className="relative">
+            {renderContent()}
+          </div>
         </div>
       </main>
     </div>
