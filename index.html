@@ -5,13 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ELITE V2.2</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
-        body { background-color: #1e2127; color: white; margin: 0; }
-        .shadow-neu-flat { box-shadow: 8px 8px 16px #15171b, -8px -8px 16px #272b33; }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #1e2127;
+            color: #ffffff;
+            margin: 0;
+            overflow-x: hidden;
+        }
+        .shadow-neu-flat {
+            box-shadow: 8px 8px 16px #15171b, -8px -8px 16px #272b33;
+        }
+        .shadow-neu-pressed {
+            box-shadow: inset 4px 4px 8px #15171b, inset -4px -4px 8px #272b33;
+        }
+        .shadow-neu-blue {
+            box-shadow: 0 0 15px rgba(65, 105, 225, 0.3);
+        }
+        /* Ocultar barra de desplazamiento */
+        ::-webkit-scrollbar {
+            width: 0px;
+            background: transparent;
+        }
     </style>
 </head>
 <body>
     <div id="root"></div>
-    <script type="module" src="./src/main.tsx"></script>
+    <script type="module" src="./index.tsx"></script>
 </body>
 </html>
