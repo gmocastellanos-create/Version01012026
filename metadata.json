@@ -1,0 +1,8 @@
+{
+  "name": "SOLUCIONES DIGITALES ELITE V2.2",
+  "description": "Plataforma de inteligencia estratégica para ventas orgánicas con interfaz neumórfica premium.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
